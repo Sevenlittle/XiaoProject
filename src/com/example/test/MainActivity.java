@@ -41,6 +41,18 @@ public class MainActivity extends ActionBarActivity {
 		this.btn2.setOnClickListener(new OnclickListenerImpl1());
 	}
 
+	public static int c;
+	public void TestCaseImpl(int a,int b)
+	{
+		c=a+b;
+		System.out.print(c);
+	}
+	
+	public int getResult()
+	{
+		return c;
+	}
+	
 	public class OnclickListenerImpl1 implements OnClickListener
 	{
 		public void onClick(View v)
